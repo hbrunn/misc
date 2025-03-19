@@ -17,10 +17,10 @@
                 '&amp;',
                     ('bank_account_link', '=', 'fixed'),
                     '|',
-                        ('fixed_journal_id.operating_unit_id', '=', False)
-                        ('fixed_journal_id.operating_unit_id', 'in', user.operating_unit_ids.ids)
-                ('bank_account_link', '!=', 'fixed')
-
+                        ('fixed_journal_id.operating_unit_id', '=', False),
+                        ('fixed_journal_id.operating_unit_id', 'in', user.operating_unit_ids.ids),
+                ('bank_account_link', '!=', 'fixed'),
+            ]
         </field>
     </record>
 </odoo>
